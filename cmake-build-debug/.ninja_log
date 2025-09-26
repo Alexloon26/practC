@@ -1,0 +1,12 @@
+# ninja log v6
+2	124	7805950293800558	CMakeFiles/practC.dir/main.c.obj	c5dbea775c6948f5
+42	174	7805952935632331	CMakeFiles/practC.dir/linkedList.c.obj	d8ab1074b35c0c3c
+31	163	7805952935525469	CMakeFiles/practC.dir/mathCalculation.c.obj	8bad5cd22d87fb40
+41	2510	7805957495611787	build.ninja	74d6c53452e39bcb
+45	165	7805952935662322	CMakeFiles/practC.dir/string.c.obj	3b75081806595e1e
+19	147	7805957045454760	CMakeFiles/linkedList.dir/linkedList.c.obj	e312b3863a017655
+2	131	7805957045282706	CMakeFiles/mathCalculation.dir/mathCalculation.c.obj	34bfdf1495ca3e38
+15	140	7805957045414704	CMakeFiles/string.dir/string.c.obj	fc29da8b048a570b
+140	232	7805957046669450	string.exe	8c1e35702c1e109
+147	233	7805957046734542	linkedList.exe	841cac444d13339c
+132	234	7805957046578872	mathCalculation.exe	9a414aa44d6f7e3a

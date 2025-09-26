@@ -1,0 +1,5 @@
+C:/Users/Alexandr/CLionProjects/practC/cmake-build-debug/CMakeFiles/mathCalculation.dir
+C:/Users/Alexandr/CLionProjects/practC/cmake-build-debug/CMakeFiles/string.dir
+C:/Users/Alexandr/CLionProjects/practC/cmake-build-debug/CMakeFiles/linkedList.dir
+C:/Users/Alexandr/CLionProjects/practC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alexandr/CLionProjects/practC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
