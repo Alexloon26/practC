@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Структура для книги
 typedef struct {
     char title[80];
     double price;
@@ -12,25 +11,23 @@ typedef struct {
     int year;
 } Book;
 
-// Вузол списку
 typedef struct Node {
     Book book;
     struct Node* next;
 } Node;
 
-// Створення нового вузла зі структурою Book
-Node* create_node(Book book) {
-    Node* node = malloc(sizeof(Node));
+
+Node *create_node(Book book) {
+    Node *node = malloc(sizeof(Node));
     if (!node) {
-        fprintf(stderr, "Memory allocation failed!\n");
-        exit(EXIT_FAILURE);
+        printf("Memory allocation failed!\n");
+        exit(1);
     }
-    node->book = book;     // копіюємо всю структуру одразу
+    node->book = book;
     node->next = NULL;
     return node;
 }
 
-// Додає вузол у кінець списку
 void append_node(Node** head, Book book) {
     Node* new_node = create_node(book);
     if (*head == NULL) {
@@ -44,7 +41,6 @@ void append_node(Node** head, Book book) {
     current->next = new_node;
 }
 
-// Друк усього списку
 void print_list(Node* head) {
     if (!head) {
         printf("List is empty.\n");
@@ -64,7 +60,6 @@ void print_list(Node* head) {
     }
 }
 
-// Звільнення пам'яті
 void free_list(Node* head) {
     while (head) {
         Node* tmp = head;
@@ -76,7 +71,6 @@ void free_list(Node* head) {
 int main(void) {
     Node* head = NULL;
 
-    // Створюємо книги як окремі структури
     Book b1 = {"Philosopher's Stone", 500.0, 223, "English", 553, 1997};
     Book b2 = {"Chamber of Secrets", 520.0, 251, "English", 622, 1998};
     Book b3 = {"Prisoner of Azkaban", 1200.0, 317, "English", 786, 1999};
